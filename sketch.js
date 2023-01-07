@@ -22,10 +22,9 @@ function setup(){
   
 //create a canvas
 
-// createCanvas(window,window);
-// createCanvas(windowWidth,windowHeight);
-// createCanvas(width,height);
-// createCanvas(200,200);
+
+createCanvas(windowWidth,windowHeight);
+
 
 // Moving background
 
@@ -58,21 +57,12 @@ function draw() {
   
   //code to reset the background
 
-  // if(path.x > height ){
-  //   path.x = height/2;
-  // }
+  
+  if(path.x > height ){
+    path.y = height;
+  }
 
-  // if(path.y > height ){
-  //   path.x = height/2;
-  // }
-
-  // if(path.x > height ){
-  //   path.y = height;
-  // }
-
-  // if(path.y > height ){
-  //   path.y = height/2;
-  // }
+ 
   
     createCash();
     createDiamonds();
